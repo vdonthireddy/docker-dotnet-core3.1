@@ -18,4 +18,5 @@ ENTRYPOINT ["dotnet", "deleteme001.dll"]
 ' > Dockerfile
 docker build -t deleteme001:1.0 .
 docker run -d -p 8435:80 deleteme001:1.0
+sleep 3s
 curl http://localhost:8435/weatherforecast
